@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src ="https://code.jquery.com/jquery-2.1.4.js"> </script>    
+    <script type="text/javascript" src="tracker.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+    <script src="https://rawgit.com/jonthornton/jquery-timepicker/master/jquery.timepicker.min.js"></script>
+    <link href="https://rawgit.com/jonthornton/jquery-timepicker/master/jquery.timepicker.css" rel="stylesheet"></link>
+    <script id="activity-template" type="text/x-handlebars-template">
+        <div class="activity">
+            <h3>{{activity}}</h3>
+        </div>
+    </script>
+        
+</head>
+
+
+
+<body>
+    //
+<form>
+    <fieldset>
+        <legend>Track your Time</legend>
+        <div>
+      <input type="text" placeholder="Start Time" name="start">
+      </div>
+      <div>
+      <input type="text" placeholder = "End Time" name="end">
+      </div>
+      <div>
+      <input type="text" placeholder= "activity name" name="activity">
+    
+          </div>
+          <div>    
+      <input type ="submit" value="submit">
+    
+    
+    </fieldset>
+    <h3>Activities</h3>
+    <div id="activities"></div>
+</form>    
+    
+</body>
+
+</html>
